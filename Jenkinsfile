@@ -21,7 +21,7 @@ pipeline {
             }
         }
         
-        stage('push Image') {
+        stage('Push Image') {
             when {
                 expression {
                     CICD == 'CICD'
