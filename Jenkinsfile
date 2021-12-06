@@ -4,7 +4,7 @@ pipeline {
     parameters {
         booleanParam(name: 'Run', defaultValue: true, description: 'Toggle this value for testing')
         choice(name: 'CICD', choices: ['CICD', 'CI'], description: 'pick CI / CI, CD, or Rollback')
-        
+         
     }
     stages {
         stage('Clone Project') {
